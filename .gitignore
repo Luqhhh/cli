@@ -142,3 +142,6 @@ outputs/search_20260923/
 
 # Private fixed V1 supervision-transfer artifacts.
 /outputs/codex/v1_768_supervision_transfer_20261004/
+
+# Private fixed WFT logits, calibration and packages.
+/outputs/codex/v1_wft_fixed_bias_20261004/
