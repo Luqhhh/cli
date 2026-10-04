@@ -1,0 +1,41 @@
+{
+  "delivery_allowance_seconds": 2495.612385512999,
+  "estimated_fit_seconds": 70.54490656009875,
+  "evidence": {
+    "candidate768": {
+      "dropout_rng_sha256": "fbb01baea82cc7e7de04b56227bc76fdf6b7415a81cc769e2069581149e97137",
+      "history": [
+        {
+          "epoch": 1,
+          "mean_loss": 1.3125231266021729,
+          "steps": 4
+        }
+      ],
+      "initial_sha256": {
+        "logit_scale": "229b5046cff7b33f2e68e312ac5b15a387487986a02ab692285cccf6a7f3ca0f",
+        "weight": "f6f206a53fbf4407ae9b7de8c1aaddf2d9e531e65f1acdfbbfc43913d830a0e7"
+      },
+      "sample_order_sha256": "23c0c8de3ec6beba908a23ba1109d8f2e0b12ebabb962f05b471155710ca1260",
+      "steps": 4
+    },
+    "control512": {
+      "dropout_rng_sha256": "fbb01baea82cc7e7de04b56227bc76fdf6b7415a81cc769e2069581149e97137",
+      "history": [
+        {
+          "epoch": 1,
+          "mean_loss": 1.3044706583023071,
+          "steps": 4
+        }
+      ],
+      "initial_sha256": {
+        "logit_scale": "229b5046cff7b33f2e68e312ac5b15a387487986a02ab692285cccf6a7f3ca0f",
+        "weight": "f6f206a53fbf4407ae9b7de8c1aaddf2d9e531e65f1acdfbbfc43913d830a0e7"
+      },
+      "sample_order_sha256": "23c0c8de3ec6beba908a23ba1109d8f2e0b12ebabb962f05b471155710ca1260",
+      "steps": 4
+    }
+  },
+  "seconds": 0.8818113320012344,
+  "status": "cost_complete_discarded_heads",
+  "within_budget": true
+}

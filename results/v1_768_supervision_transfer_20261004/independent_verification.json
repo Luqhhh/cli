@@ -1,0 +1,56 @@
+{
+  "status": "independently_verified",
+  "experiment_id": "V1_768_SUPERVISION_TRANSFER_20261004",
+  "source_files": 30,
+  "all_train_targets_recounted": 133815,
+  "paired_orders_checked": [
+    20,
+    123160
+  ],
+  "fp64_val_predictions_replayed": 29760,
+  "metrics_recounted": 12,
+  "comparisons_recounted": 12,
+  "gates": {
+    "net_vs_control": false,
+    "net_vs_archived": false,
+    "common_net": true,
+    "macro_delta": true
+  },
+  "decision": "close_fixed_supervision_transfer",
+  "packages": [
+    {
+      "arm": "control512",
+      "decoder": "submission_raw",
+      "rows": 37444,
+      "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/control512/submission_raw/submission.zip",
+      "zip_sha256": "b97c72db522d6e0db18a4047265640fae09f4edd3e40694385726b79bba407d5",
+      "nine_checks_passed": true
+    },
+    {
+      "arm": "control512",
+      "decoder": "submission",
+      "rows": 37444,
+      "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/control512/submission/submission.zip",
+      "zip_sha256": "6a5db487c7995c6fe96bdbe7dcc48048968c8226ed1d1c7a1f48691288a3ca20",
+      "nine_checks_passed": true
+    },
+    {
+      "arm": "candidate768",
+      "decoder": "submission_raw",
+      "rows": 37444,
+      "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/candidate768/submission_raw/submission.zip",
+      "zip_sha256": "9e1f20f40b5a32d3a7c251cdf32d1c87588adbe530147abf867033a94bcc0712",
+      "nine_checks_passed": true
+    },
+    {
+      "arm": "candidate768",
+      "decoder": "submission",
+      "rows": 37444,
+      "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/candidate768/submission/submission.zip",
+      "zip_sha256": "11cd92fc2534ce85c25c1e3ad58762d8e1ca6b1e3fd18e762a13115a5ded45e4",
+      "nine_checks_passed": true
+    }
+  ],
+  "incumbent_unchanged": true,
+  "platform_score": null
+}

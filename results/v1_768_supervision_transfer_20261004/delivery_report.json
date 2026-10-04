@@ -1,0 +1,81 @@
+{
+  "binding": {
+    "class_mapping_sha256": "6f6fdc3eef8e526d3cde89da6d98690603e26ee8cae5de7e7e90c743bf3a551c",
+    "data_version": "20260921",
+    "dataset_manifest_sha256": "484b0958564a41753471842f9822fbf9139a4ca6a8a95891d6566e876f8e4dd0",
+    "feature_manifest_sha256": "1202d9bb189ab9448fa942f047aa46de96610cde46eef38c5442b6ec9a984d8c",
+    "implementation_sha256": "71570b5a71f103d1e7cf901d1f3cf88f8729a20a79ac0257b62a7d51be37c1d4",
+    "official_checkpoint_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+    "recipe_sha256": "d099cf9c57c44c71671f80fd0825ab307a05f85aba6bf940d9e1c2febf2b1c36",
+    "stage": "repechage",
+    "transfer_sources_sha256": "729e0225fdfbbd483b228a3bd0d62911fdab0355952079a5e3f980644b970f44"
+  },
+  "cold_replay": {
+    "candidate768": {
+      "images": 64,
+      "max_error": 0.0,
+      "predictions_equal": true
+    },
+    "control512": {
+      "images": 64,
+      "max_error": 0.0,
+      "predictions_equal": true
+    }
+  },
+  "decision": "close_fixed_supervision_transfer",
+  "experiment_id": "V1_768_SUPERVISION_TRANSFER_20261004",
+  "incumbent_unchanged": true,
+  "packages": {
+    "candidate768": {
+      "checkpoint_sha256": "c6aff8c65acd25ba668f457db8a06a94016d4fe9cda0b61d3ec4940760f520b3",
+      "independent_bias_max_error": 5.494558209306888e-06,
+      "independent_refit_prediction_matches": 37444,
+      "independent_test_accuracy": null,
+      "packages": {
+        "submission": {
+          "csv": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/candidate768/submission/pred_results.csv",
+          "numpy_replay_matches": 37444,
+          "samples": 37444,
+          "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/candidate768/submission/submission.zip",
+          "zip_sha256": "11cd92fc2534ce85c25c1e3ad58762d8e1ca6b1e3fd18e762a13115a5ded45e4"
+        },
+        "submission_raw": {
+          "csv": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/candidate768/submission_raw/pred_results.csv",
+          "numpy_replay_matches": 37444,
+          "samples": 37444,
+          "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/candidate768/submission_raw/submission.zip",
+          "zip_sha256": "9e1f20f40b5a32d3a7c251cdf32d1c87588adbe530147abf867033a94bcc0712"
+        }
+      },
+      "platform_score": null,
+      "raw_to_bias_changes": 7241
+    },
+    "control512": {
+      "checkpoint_sha256": "99a31a230e44463917856929c19716ac367d72e3b1d0df1bf1cd7da536870244",
+      "independent_bias_max_error": 3.6899524378242177e-06,
+      "independent_refit_prediction_matches": 37444,
+      "independent_test_accuracy": null,
+      "packages": {
+        "submission": {
+          "csv": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/control512/submission/pred_results.csv",
+          "numpy_replay_matches": 37444,
+          "samples": 37444,
+          "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/control512/submission/submission.zip",
+          "zip_sha256": "6a5db487c7995c6fe96bdbe7dcc48048968c8226ed1d1c7a1f48691288a3ca20"
+        },
+        "submission_raw": {
+          "csv": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/control512/submission_raw/pred_results.csv",
+          "numpy_replay_matches": 37444,
+          "samples": 37444,
+          "zip": "/home/lux1/noise/worktrees/v1_768_supervision_transfer_20261004/outputs/codex/v1_768_supervision_transfer_20261004/control512/submission_raw/submission.zip",
+          "zip_sha256": "b97c72db522d6e0db18a4047265640fae09f4edd3e40694385726b79bba407d5"
+        }
+      },
+      "platform_score": null,
+      "raw_to_bias_changes": 7417
+    }
+  },
+  "platform_score": null,
+  "seconds": 1266.5304858320014,
+  "status": "completed_verified_delivery"
+}
