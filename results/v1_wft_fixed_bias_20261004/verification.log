@@ -1,0 +1,5 @@
+independent NumPy bias 50/200
+independent NumPy bias 100/200
+independent NumPy bias 150/200
+independent NumPy bias 200/200
+Independent verification passed: 37444 rows; bias max error 7.7864462e-06

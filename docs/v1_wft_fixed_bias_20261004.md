@@ -53,4 +53,27 @@ SHA `51e372c390f65702ef15af82b7de5a6cc7a382cfaf6f54b7c44be418517aec49`，
 
 ## 执行状态
 
-协议已冻结，CPU预检进行中。暂无新候选结果或平台分数。
+预注册提交 `6a71a6f`。CPU来源/模型预检及36项针对性测试通过。
+原始归档计划按原代码通过校验，48个LoRA模块合并转换误差0；FULL末轮EMA状态加载成功。
+完整前向、重建模型及64张逐视图冷加载检查共 **1,151.25秒**，冷加载最大误差0。
+37,444条原生均值raw与SUM raw均逐条复现旧提交；新raw CSV与旧CSV字节一致。
+固定bias及两包九项检查共10.43秒，bias改变6,565条预测；这些变化没有真值，修正/退化未知。
+
+| 包 | 输出根下路径 | CSV SHA256 | ZIP SHA256 |
+|---|---|---|---|
+| 唯一新候选 | `submission/{pred_results.csv,submission.zip}` | `3ddef729e11846e99707462fe373f03c034b13d9df13aded6e0fbd41a101ac01` | `b0b6b44fa2e2e2a84387da6714eb5c6f0bf3fd9d41dbe6889be2617c1cfc9b25` |
+| raw复现对照 | `submission_raw/{pred_results.csv,submission.zip}` | `ee7cbd79e045440a55281615f0005cfae29142bc2d2bedbcef246e41b1cc556f` | `9f54f689135b26bda36511e1a40423583229a0aba8e70e62d4022ad6254e8dc2` |
+
+新raw ZIP的容器时间戳与旧ZIP不同，但内部CSV字节一致；原raw反馈仍为70.43585087063347%，
+本次没有新平台上传或评分。bias候选平台分未知，保留现役v2 **74.89317380621728%**。
+无新训练、无其他候选选择、无桌面覆盖。本段完成后暂停，固定WFT bias入口不派生参数扫描。
+
+实现改动为两个独立进程入口：
+[原归档前向](../scripts/infer_v1_wft_fixed_bias.py)、
+[现行bias/独立重放](../scripts/deliver_v1_wft_fixed_bias.py)，
+及配置、私有输出忽略规则和当前执行入口记录；公共模型/训练代码未改。
+实测记录保存在 [results](../results/v1_wft_fixed_bias_20261004/)，大缓存和提交包留在独立输出根。
+独立CPU复核通过：从168,498,000个逐视图值重算原生均值和SUM均精确一致，
+NumPy FP64固定200次重拟合bias的最大误差 **7.78645e−6**，37,444条最终预测全部一致。
+两包CSV/ZIP逐字节重放、九项复验及101个来源摘要通过；现役ZIP摘要未变。
+见[最终独立验证](../results/v1_wft_fixed_bias_20261004/independent_verification.json)。

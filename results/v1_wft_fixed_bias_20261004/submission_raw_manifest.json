@@ -1,0 +1,49 @@
+{
+  "binding": {
+    "config_sha256": "69e1d496692a1cd22d909e744c75c6ab5f7f54f45aacd10d552821b1b3c3a49d",
+    "original_binding": {
+      "parent_sha256": "34307b7998af27b2399d091bdbdee40cec33e10f17267d8f81c6ed1a6ac8461a",
+      "plan_sha256": "f0a86b72da4e6e03deed27cdc9fb51a49da87968179342d74bc43bb6641ed0bf",
+      "source_binding": {
+        "class_mapping_sha256": "6f6fdc3eef8e526d3cde89da6d98690603e26ee8cae5de7e7e90c743bf3a551c",
+        "data_version": "20260921",
+        "dataset_manifest_sha256": "484b0958564a41753471842f9822fbf9139a4ca6a8a95891d6566e876f8e4dd0",
+        "feature_manifest_sha256": "1202d9bb189ab9448fa942f047aa46de96610cde46eef38c5442b6ec9a984d8c",
+        "implementation_sha256": "20923ff914fb706cd7145ba29652eff31f3fd5c834b95fe4870f00d4d8b8135d",
+        "official_checkpoint_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+        "recipe_sha256": "1e3bbf0f98b930324ee4d25156c0302d4a9ab495a653e2197109b0445dacb646",
+        "stage": "repechage"
+      },
+      "targets_sha256": "e3ed0fcd6763f3adbd3f975860e4349344473b6521aa10a6041e8302c0cb3415"
+    }
+  },
+  "calibration_sha256": null,
+  "checkpoint": "/home/lux1/noise/worktrees/wft448_full_20261001/outputs/codex/wft448_full_20261001/run/training/selected.pt",
+  "checkpoint_sha256": "9561fbb463d37c8ff576098fee04dc696aa71baa80f377c52fe40bb3bc8e9823",
+  "decoder": {
+    "crop": 448,
+    "flip": true,
+    "iterations": 200,
+    "reduction": "sixview_logit_sum",
+    "scales": [
+      448,
+      512,
+      576
+    ],
+    "strength": 1.0
+  },
+  "format_version": 1,
+  "inference_mode": "wft_fixed_sixview_sum_submission_raw",
+  "logits_sha256": "f37ca5c88fdeb2b1f00b579ae9352c39c40ddd778eec0750f5b708e0fdebab4a",
+  "model_updates": 0,
+  "official_permission_confirmed": true,
+  "permission_source": "user-relayed official confirmation 2026-10-01",
+  "platform_score": null,
+  "prediction_count": 37444,
+  "prediction_csv_sha256": "ee7cbd79e045440a55281615f0005cfae29142bc2d2bedbcef246e41b1cc556f",
+  "selected_policy": "last_ema",
+  "status": "unpromoted_candidate",
+  "submission_zip_sha256": "9f54f689135b26bda36511e1a40423583229a0aba8e70e62d4022ad6254e8dc2",
+  "test_usage": "inference_only",
+  "tta_risk_acknowledged": true
+}
