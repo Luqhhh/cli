@@ -1,0 +1,32 @@
+{
+  "accuracy_gain_unknown": true,
+  "archived_raw_csv_byte_identical": true,
+  "cold_max_abs_error": 0.0,
+  "cold_rows": 64,
+  "experiment_id": "V1_WFT_FIXED_BIAS_20261004",
+  "incumbent_score": 74.89317380621728,
+  "incumbent_unchanged": true,
+  "independent_float64_bias_max_error": 7.786446158064564e-06,
+  "independent_prediction_matches": 37444,
+  "packages": {
+    "submission": {
+      "checker_output": "Test set contains 37444 images\n\n============================================================\nChecking pred_results.csv...\n============================================================\n  ✅ File name: pred_results.csv\n  ✅ Line count: 37444 (matches test set)\n  ✅ All image names found in test set\n  ✅ No duplicate image names\n  ✅ All test images covered\n  ✅ All labels are 4-digit strings\n  ✅ All labels in range [0000, 0749]\n\n============================================================\nChecking submission.zip...\n============================================================\n  ✅ ZIP contains only pred_results.csv (no directory)\n\n============================================================\n🎉 All checks passed! Submission is ready.\n",
+      "csv_sha256": "3ddef729e11846e99707462fe373f03c034b13d9df13aded6e0fbd41a101ac01",
+      "samples": 37444,
+      "zip_sha256": "b0b6b44fa2e2e2a84387da6714eb5c6f0bf3fd9d41dbe6889be2617c1cfc9b25"
+    },
+    "submission_raw": {
+      "checker_output": "Test set contains 37444 images\n\n============================================================\nChecking pred_results.csv...\n============================================================\n  ✅ File name: pred_results.csv\n  ✅ Line count: 37444 (matches test set)\n  ✅ All image names found in test set\n  ✅ No duplicate image names\n  ✅ All test images covered\n  ✅ All labels are 4-digit strings\n  ✅ All labels in range [0000, 0749]\n\n============================================================\nChecking submission.zip...\n============================================================\n  ✅ ZIP contains only pred_results.csv (no directory)\n\n============================================================\n🎉 All checks passed! Submission is ready.\n",
+      "csv_sha256": "ee7cbd79e045440a55281615f0005cfae29142bc2d2bedbcef246e41b1cc556f",
+      "samples": 37444,
+      "zip_sha256": "9f54f689135b26bda36511e1a40423583229a0aba8e70e62d4022ad6254e8dc2"
+    }
+  },
+  "per_view_values_reduced": 168498000,
+  "platform_score": null,
+  "raw_to_bias_changes": 6565,
+  "rows": 37444,
+  "seconds": 36.871135014000174,
+  "sources_verified": 101,
+  "status": "verified"
+}

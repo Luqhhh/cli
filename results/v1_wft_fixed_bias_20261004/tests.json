@@ -1,0 +1,6 @@
+{
+  "command": "PYTHONPATH=reproducibility/aegis_f1 OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2 python3 -m pytest tests/test_v1_continuation.py reproducibility/aegis_f1/tests/test_v1_preprojection_test_bias.py reproducibility/aegis_f1/tests/test_prior_alignment.py reproducibility/aegis_f1/tests/test_submission.py -q",
+  "exit_code": 0,
+  "passed": 36,
+  "seconds": 3.62
+}

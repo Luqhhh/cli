@@ -20,7 +20,19 @@ v2+768完整长训练、v2 EMA/RAW平均及新增v2解码搜索退出默认后�
 原方向整理段完成方向、误差缺口及现役包核对；其本身没有新训练或推理。
 现役包、复现命令、已有方案去重及下一探针边界见[本段记录](v1_priority_20261004.md)。
 
-## 最新v1有限配对：V1_768_SUPERVISION_TRANSFER_20261004
+## 最新v1固定推理交付：V1_WFT_FIXED_BIAS_20261004
+
+补齐已训练WFT448 FULL第4轮last EMA的固定六视图SUM + 测试均衡bias比较；无新训练。
+此前WFT raw平台70.43585087063347%没有bias，与现行高分包的解码不同。
+固定448/512/576短边、裁剪448、原图/翻转，200次uniform soft-mass bias、strength=1。
+两份37,444行raw/bias包九项检查通过；raw CSV与旧提交逐字节一致，bias改变6,565条预测。
+全量前向含64张冷加载复核1,151.25秒，冷加载误差0；独立FP64重拟合37,444条决策全部一致。
+36项CPU测试和101个来源摘要核对通过；bias平台分未知，不把预测变化视作准确率提升。
+现役继续保留v2 **74.89317380621728%**。该固定推理段已交付并暂停，不扩WFT训练或bias扫描。
+候选路径、SHA及精确命令见[本段记录](v1_wft_fixed_bias_20261004.md)，
+验证见[独立复核](../results/v1_wft_fixed_bias_20261004/independent_verification.json)。
+
+## 最近v1有限配对：V1_768_SUPERVISION_TRANSFER_20261004
 
 复用CRT冻结视觉塔，仅替换训练侧目标/可靠度；新监督只由133,815张train_dev构建。
 两臂共享123,160条有效人口并集、20轮顺序/dropout RNG及初始化，每臂320次更新。
@@ -563,7 +575,14 @@ WFT448/LR512入口发现CUDA在用进程会拒绝启动；最新授权串行cont
 
 ## 交付与历史入口
 
-现役最高用户报告包（v2 full末轮raw六视图 + 固定测试均衡bias，74.6688387992735%）：
+现役最高用户报告包（v2 full末轮raw六视图logits求和 + 固定测试均衡bias，74.89317380621728%）：
+`/mnt/c/Users/lqh22/Downloads/v2_continuation_20261001/submission_bias_sixview_logit_sum/{pred_results.csv,submission.zip}`。
+桌面包 `/mnt/c/Users/lqh22/Desktop/noise_top4_20261003/01_v2_full_sixview_logit_sum_bias.zip`。
+ZIP SHA256 `51e372c390f65702ef15af82b7de5a6cc7a382cfaf6f54b7c44be418517aec49`，
+37,444行及九项复验通过；分数来自用户反馈，见[TOP4登记](top4_platform_20261004.md)。
+同SUM解码raw包03仍待分数，不用旧概率均值raw分计算此次bias收益。
+
+此前最高用户报告包（v2 full末轮raw六视图概率均值 + 固定测试均衡bias，74.6688387992735%）：
 `/mnt/c/Users/lqh22/Downloads/v2_continuation_20261001/submission_bias_sixview/{pred_results.csv,submission.zip}`（用户提交的就是这一份）。
 ZIP SHA256 `7164b26d9662a8c0e78c9c0636393efe0927739cb84df8dc88ed33e35f47659a`，
 37,444行、2026-10-03对该实际文件九项通过；同checkpoint的六视图无bias对照在

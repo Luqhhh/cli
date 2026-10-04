@@ -1,0 +1,21 @@
+{
+  "packages": {
+    "submission": {
+      "csv": "/home/lux1/noise/worktrees/v1_wft_fixed_bias_20261004/outputs/codex/v1_wft_fixed_bias_20261004/submission/pred_results.csv",
+      "csv_sha256": "3ddef729e11846e99707462fe373f03c034b13d9df13aded6e0fbd41a101ac01",
+      "zip": "/home/lux1/noise/worktrees/v1_wft_fixed_bias_20261004/outputs/codex/v1_wft_fixed_bias_20261004/submission/submission.zip",
+      "zip_sha256": "b0b6b44fa2e2e2a84387da6714eb5c6f0bf3fd9d41dbe6889be2617c1cfc9b25"
+    },
+    "submission_raw": {
+      "csv": "/home/lux1/noise/worktrees/v1_wft_fixed_bias_20261004/outputs/codex/v1_wft_fixed_bias_20261004/submission_raw/pred_results.csv",
+      "csv_sha256": "ee7cbd79e045440a55281615f0005cfae29142bc2d2bedbcef246e41b1cc556f",
+      "zip": "/home/lux1/noise/worktrees/v1_wft_fixed_bias_20261004/outputs/codex/v1_wft_fixed_bias_20261004/submission_raw/submission.zip",
+      "zip_sha256": "9f54f689135b26bda36511e1a40423583229a0aba8e70e62d4022ad6254e8dc2"
+    }
+  },
+  "platform_score": null,
+  "raw_to_bias_changes": 6565,
+  "rows": 37444,
+  "seconds": 10.432002816000022,
+  "status": "packages_ready"
+}
